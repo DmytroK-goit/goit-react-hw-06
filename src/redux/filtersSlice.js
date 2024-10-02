@@ -1,13 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const slice = createSlice({
-  name: "filters",
+  name: "search",
   initialState: {
-    status: "all",
+    query: "",
   },
   reducers: {
     setContactFilter(state, action) {
-      state.status = action.payload;
+      state.query = action.payload;
     },
   },
 });

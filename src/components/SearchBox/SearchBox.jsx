@@ -1,8 +1,16 @@
 import { useId } from "react";
 import s from "./SearchBox.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { setContactFilter } from "../../redux/filtersSlice";
 
-const SearchBox = ({ value, onFilter }) => {
+const SearchBox = () => {
   const surchId = useId();
+  const dispatch = useDispatch();
+  const query = useSelector((state) => state.search.query);
+
+  const handleChange = (event) => {
+    dispatch(setContactFilter(event.target.value));
+  };
 
   return (
     <div>
@@ -12,8 +20,8 @@ const SearchBox = ({ value, onFilter }) => {
           <input
             type="text"
             id={surchId}
-            value={value}
-            onChange={(e) => onFilter(e.target.value)}
+            value={query}
+            onChange={handleChange}
             placeholder="Enter surch name"
           />
         </label>

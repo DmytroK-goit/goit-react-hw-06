@@ -17,13 +17,6 @@ const ContactForm = () => {
         number: values.number,
       })
     );
-
-    console.log("Contact added:", {
-      id: nanoid(),
-      name: values.name,
-      number: values.number,
-    });
-
     resetForm();
   };
 

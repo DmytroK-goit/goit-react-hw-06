@@ -1,0 +1,18 @@
+.contact {
+    display: flex;
+    gap: 25px;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: burlywood;
+    margin-bottom: 20px;
+    width: 450px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact button {
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+}

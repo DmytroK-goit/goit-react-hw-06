@@ -1,0 +1,14 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: burlywood;
+    margin-bottom: 20px;
+}
+
+.form label {
+    display: flex;
+    flex-direction: column;
+}

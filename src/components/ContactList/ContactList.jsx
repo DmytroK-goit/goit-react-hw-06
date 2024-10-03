@@ -12,7 +12,7 @@ const getVisibleContacts = (contacts, query) => {
 };
 
 const ContactList = () => {
-  const contacts = useSelector((state) => state.numbers.items);
+  const contacts = useSelector((state) => state.contacts?.items || []);
   console.log(contacts);
 
   const query = useSelector((state) => state.search.query);

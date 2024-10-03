@@ -4,6 +4,7 @@ import initContacts from "./assets/contacts.json";
 import ContactForm from "./components/ContactForm/ContactForm";
 import SearchBox from "./components/SearchBox/SearchBox";
 import ContactList from "./components/ContactList/ContactList";
+import { PersistGate } from "redux-persist/integration/react";
 
 function App() {
   // const [contacts, setContacts] = useState(() => {

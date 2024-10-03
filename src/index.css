@@ -24,18 +24,19 @@ a:hover {
 }
 
 body {
-
   display: flex;
-  justify-content: center;
-  place-items: center;
+  padding: 20px;
   margin: 0 auto;
-  min-width: 320px;
   min-height: 100vh;
+  background: linear-gradient(to bottom, rgb(89, 236, 89), rgb(213, 250, 213));
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  box-shadow: 1px 15px 5px rgb(190, 126, 30);
+  width: 300px;
+  border-radius: 10px;
 }
 
 button {

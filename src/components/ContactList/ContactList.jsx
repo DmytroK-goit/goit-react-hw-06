@@ -19,13 +19,16 @@ const ContactList = () => {
   const visibleContacts = getVisibleContacts(contacts, query);
 
   return (
-    <ul>
-      {visibleContacts.map((contact) => (
-        <li className={s.li} key={contact.id}>
-          <Contact data={contact} />
-        </li>
-      ))}
-    </ul>
+    <>
+      <h2>Contact List</h2>
+      <ul className={s.list}>
+        {visibleContacts.map((contact) => (
+          <li className={s.li} key={contact.id}>
+            <Contact data={contact} />
+          </li>
+        ))}
+      </ul>
+    </>
   );
 };
 export default ContactList;

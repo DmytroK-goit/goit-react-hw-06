@@ -33,7 +33,6 @@ function MyApp({ mode, setMode }) {
 
 function App() {
   const [mode, setMode] = useState("light");
-
   const theme = createTheme({
     palette: {
       mode: mode,
@@ -58,6 +57,7 @@ function App() {
           minHeight: "100vh",
           padding: "20px",
           textAlign: "center",
+          overflow: "scroll",
         }}
       >
         <MyApp mode={mode} setMode={setMode} />

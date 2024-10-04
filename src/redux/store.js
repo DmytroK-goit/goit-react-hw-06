@@ -3,16 +3,16 @@ import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
 import contactsReducer from "./contactsSlice";
-import searchReducer from "./filtersSlice";
+import filtersReducer from "./filtersSlice";
 
 const persistConfig = {
   key: "root",
   storage,
-  // whitelist: ["contacts"],
+  whitelist: ["items"],
 };
 const rootReducer = combineReducers({
   contacts: contactsReducer,
-  search: searchReducer,
+  filters: filtersReducer,
 });
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

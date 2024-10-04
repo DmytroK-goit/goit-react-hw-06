@@ -1,17 +1,17 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const slice = createSlice({
-  name: "search",
+  name: "filters",
   initialState: {
-    query: "",
+    name: "",
   },
   reducers: {
-    setContactFilter(state, action) {
-      state.query = action.payload;
+    changeFilter(state, action) {
+      state.name = action.payload;
     },
   },
 });
-
-export const { setContactFilter } = slice.actions;
+console.log(slice.actions);
+export const { changeFilter } = slice.actions;
 
 export default slice.reducer;
